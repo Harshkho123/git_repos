@@ -1,0 +1,11 @@
+--- 
+    hosts: all
+    become: yes
+    tasks:
+       name: "I want to install webeserver"
+       apt: 
+         name: apache2 
+         state: present  
+      
+
+    
