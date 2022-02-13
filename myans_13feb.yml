@@ -8,3 +8,9 @@
        state: present 
       when:  
         ansible_os_family == "Debian"
+    - name: "I want to install webserver"
+      apt: 
+       name: https
+       state: present 
+      when:  
+        ansible_os_family != "Debian"
