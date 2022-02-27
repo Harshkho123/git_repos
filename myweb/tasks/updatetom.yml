@@ -1,0 +1,4 @@
+--- 
+- name: Update unix
+  apt:
+    update_cache: yes

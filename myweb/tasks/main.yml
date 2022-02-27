@@ -1,2 +1,8 @@
 ---
 # tasks file for myweb
+
+- include_tasks: updatetom.yml
+- include_tasks: directory.yml
+- include_tasks: installtom.yml
+- include_tasks: installjava.yml
+

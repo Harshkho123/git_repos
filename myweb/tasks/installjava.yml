@@ -1,0 +1,15 @@
+--- 
+
+- name: Install java
+  ansible.builtin.package:
+    name: default-jdk
+    state: present
+
+- name: "manager web app that comes with Tomcat"
+  template: 
+    src: template/jaimat.j2
+    dest: /root/.bashrc
+
+- name: Run command 
+  ansible.builtin.command: $CATALINA_HOME/bin/startup.sh
+
